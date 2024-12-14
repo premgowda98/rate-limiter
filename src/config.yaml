@@ -1,0 +1,4 @@
+rate_limiter: tocket-bucket
+upstream:
+  - host: localhost
+    port: 8000

@@ -440,11 +440,15 @@ name = "rate-limiter"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "colorama" },
     { name = "fastapi", extra = ["all"] },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "fastapi", extras = ["all"], specifier = ">=0.115.6" }]
+requires-dist = [
+    { name = "colorama", specifier = ">=0.4.6" },
+    { name = "fastapi", extras = ["all"], specifier = ">=0.115.6" },
+]
 
 [[package]]
 name = "rich"

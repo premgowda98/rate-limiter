@@ -12,4 +12,11 @@ In a network system, a rate limiter is used to control the rate of traffic sent 
 ### Token bucket
 1. Used by Amazon, Stripe
 2. Contianer as pre-defined capacity, once full no more tokens are added
-3. 
+
+### Leaky Bucket
+1. Similar to Token bucket
+2. Based on FIFO
+3. When request comes it checks if queue is empty
+    1. If empty adds to queue
+    2. Else drops the request
+4. Requests are processed at fixed rate
